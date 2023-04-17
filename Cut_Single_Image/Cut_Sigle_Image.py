@@ -1,5 +1,4 @@
 from PIL import Image
-import os
 
 def resizeImage(image,imageType:str):
     if(imageType == 'main'):
@@ -38,10 +37,10 @@ def cut_Image(file_url: str, file_name: str, Imageindex: int,imageType:str):
 
 # 單獨切
 #圖片檔案位置
-file_url="C:\\Users\\hyt\\Desktop\\cutImage\\Cut_Single_Image\\transImage.png"
+file_url="C:\\Users\\hyt\\Desktop\\Make_Line_Sticker_Tool\\lineImage\\FriendlyHusky.png"
 # 圖片檔名
-file_name="transImage.png"
+file_name="Image.png"
 # 要裁切圖片的類型 main:貼圖的封面 tab:line 聊天室的小圖
-image_type="tab"
+image_type="main"
 cut_Image(file_url,file_name,0,image_type)
 print('ok')

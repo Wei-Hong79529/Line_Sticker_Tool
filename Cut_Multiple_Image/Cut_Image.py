@@ -33,8 +33,8 @@ def cut_Image(file_url: str, file_name: str, Imageindex: int):
     return
 
 
-# 資料夾路徑
-folder_path = "C:\\Users\\hyt\\Desktop\\cutImage\\lineImage"
+# 四合一照片路徑
+folder_path = "C:\\Users\\hyt\\Desktop\\Make_Line_Sticker_Tool\\lineImage"
 # 讀取資料夾內的所有檔案名稱
 file_names = os.listdir(folder_path)
 # 輸出所有檔案名稱

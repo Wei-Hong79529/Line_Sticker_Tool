@@ -22,9 +22,9 @@ def transBackGround(ImageUrl,targetPath,file_name:str,imageIndex):
 
 
 # 圖片資料來源路徑
-folder_path = "C:\\Users\\hyt\\Desktop\\cutImage\\Husky_emoj"
+folder_path = "C:\\Users\\hyt\\Desktop\\Make_Line_Sticker_Tool\\Husky_emoj"
 # 轉化背景後圖片路徑
-target_folder_path="C:\\Users\\hyt\\Desktop\\cutImage\\Husky_emoj\\transBackgroundFolder"
+target_folder_path="C:\\Users\\hyt\\Desktop\\Make_Line_Sticker_Tool\\Husky_emoj\\transBackgroundFolder"
 # 讀取資料夾內的所有檔案名稱
 file_names = os.listdir(folder_path)
 # 輸出所有檔案名稱
@@ -36,4 +36,4 @@ for file_name in file_names:
         file_url = folder_path+"\\"+file_name
         transBackGround(file_url,target_folder_path, file_name, imageIndex)
         imageIndex += 1
-print("所有圖片去背完成")
+print("所有圖片背景透明度設置為0")
